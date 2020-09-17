@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@android:style/Theme.Material.Light.DarkActionBar"
+    tools:context="nl.rubikscraft.bluebotcontroller.MainActivity"
+    android:weightSum="1"
+    android:baselineAligned="false">
+
+    <LinearLayout
+
+        android:layout_width="32dp"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_weight="0.16"
+        android:weightSum="1"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/seekBarLeftLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <SeekBar
+                android:id="@+id/seekBarLeft"
+                style="@style/Widget.AppCompat.SeekBar.Discrete"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:max="19"
+                android:progress="9"
+                android:progressDrawable="@android:color/transparent"
+                />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:layout_weight="0.68"
+        android:weightSum="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.05"
+            android:text="Not Connected"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.35"
+            android:weightSum="1"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/connectButton"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.6"
+
+                android:text="Connect"/>
+            <Button
+                android:id="@+id/disconnectButton"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.4"
+
+                android:text="Disconnect"/>
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/biemButton"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.60"
+
+            android:text="Biem!"/>
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="32dp"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_weight="0.16"
+        android:weightSum="1"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/seekBarRightLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <SeekBar
+                android:id="@+id/seekBarRight"
+                style="@style/Widget.AppCompat.SeekBar.Discrete"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:max="19"
+                android:progress="9"
+                android:progressDrawable="@android:color/transparent"
+                />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
